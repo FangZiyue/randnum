@@ -24,4 +24,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: fangziyue/workshop:latest
+        tags: fangziyue/workshop:{{ github.ref_name }}

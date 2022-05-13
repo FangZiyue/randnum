@@ -33,5 +33,5 @@ jobs:
       env:
         INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       with:
-        text:" name: Fang Ziyue\nMatriculation:A0243820M\nemail\n${{ github.repositoryUrl }}\nImageName:fangziyue/workshop:${{ github.ref_name }}\nImage url:https://hub.docker.com/repository/docker/fangziyue/workshop"
+        text: "name: Fang Ziyue\nMatriculation:A0243820M\nemail\n${{ github.repositoryUrl }}\nImageName:fangziyue/workshop:${{ github.ref_name }}\nImage url:https://hub.docker.com/repository/docker/fangziyue/workshop"
           

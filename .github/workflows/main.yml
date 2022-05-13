@@ -33,38 +33,5 @@ jobs:
       env:
         INCOMING_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
       with:
-        # For posting a rich message using Block Kit
-        payload: |
-          {
-            "blocks": [
-              {
-                "type": "section",
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "Name: Fang Ziyue"
-                },
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "Matriculation: A0243820M"
-                }, 
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "e0838388@u.nus.edu"
-                },
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "${{ github.repositoryUrl }}"
-                },
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "fangziyue/workshop:${{ github.ref_name }}"
-                },
-                "text": {
-                  "type": "mrkdwn",
-                  "text": "Image url: https://hub.docker.com/repository/docker/fangziyue/workshop"
-                }
-              }
-          }
-            ]
-          }
-    
+        text:" name: Fang Ziyue\nMatriculation:A0243820M\nemail\n${{ github.repositoryUrl }}\nImageName:fangziyue/workshop:${{ github.ref_name }}\nImage url:https://hub.docker.com/repository/docker/fangziyue/workshop"
+          
